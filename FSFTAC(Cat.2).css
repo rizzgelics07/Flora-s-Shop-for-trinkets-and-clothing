@@ -1,0 +1,186 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+.TOP {
+    display: flex;
+	position: relative;
+	background-color: #F4CECE;
+}
+
+
+.OCTitle {
+	background: #ca6b8f;
+	color: white;
+	text-align: center;
+	width: 100%;
+	height: 25px;
+	font-size: 20px;
+	margin: 0;
+}
+
+.OCBar {
+	position: relative;
+	width: 100%;
+	height: 50px;
+	background: #b2023f;
+	border-radius: 5px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.OCBar nav a {
+    position: relative;
+	display: inline-block;
+	font-size: 25px;
+	font-weight: bold;
+	color: white;
+	text-decoration: none;
+	padding: 0 50px;
+	z-index: 2;
+}
+
+.OCBar nav span{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 250px;
+	height: 100%;
+	background: linear-gradient(40deg, #ea0067, #f44522);
+	border-radius: 49px;
+	transition: 0.7s;
+
+}
+
+.OCBar nav a:nth-child(1):hover~span{
+	left: 35%;
+	width: 145px;
+}
+
+.OCBar nav a:nth-child(2):hover~span{
+	left: 45%;
+	width: 120px;
+	animation-delay: 0.2s;
+}
+
+.OCBar nav a:nth-child(3):hover~span{
+	left: 54%;
+	width: 195px;
+	animation-delay: 0.2s;
+}
+
+.MidPart {
+	display: flex;
+	position: static;
+	background-image: url(Images/Floralbg.jpg);
+	background-size: cover;
+	background-position: center;
+}
+
+.MBar nav ul {
+	list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width: 15%;
+    background-color: #eb9fbc;
+    position: absolute;
+    height: 93%;
+    overflow: auto;
+}
+
+.MBar li a {
+	display: block;
+    color: #000;
+    padding: 8px 16px;
+    text-decoration: none;
+}
+
+.MBar li a.active {
+	background-color: #d62166;
+    color: white;
+}
+
+.MBar li a:hover:not(.active) {
+    background-color: #9e4768;
+    color: white;
+}
+
+.PBox {
+	width: 100%;
+	height: 80%;
+	margin-left: 15%;
+	margin-top: 0;
+	padding: 8px 16px;
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: flex-start;
+	align-items: stretch;
+	align-content: stretch;
+}
+
+.PBox figcaption b{
+	top: 20px;
+	bottom: 0;
+	font-size: 45px;
+	padding: 20px 0 10px 0;
+}
+
+.PBox figcaption {
+	width: 300px;
+	height: 95px;
+	padding: 10px 10px 30px 10px;
+	background-color: white;
+	color: black;
+}
+
+.PBox div {
+	top: 0;
+	margin: 10px 25px;
+    opacity: 1;
+    border: none;  
+	transition: 0.3s;
+	background-color: beige;
+	box-shadow:0 2px 4px rgba(0, 0, 0, 1.0);
+	opacity: 0;
+	transform: translateY(30px);
+	animation: moveup 0.5s linear forwards;
+}
+
+.PBox div:hover{
+   top: -10px;
+   opacity: 5;
+   border-radius: 10px;
+   border: solid 5px #900C3F;
+   box-shadow:0 2px 4px rgba(0, 0, 0, 1.0);
+}
+
+.PBox div:nth-child(1) {
+	animation-delay: 0.5s;
+}
+
+.PBox div:nth-child(2) {
+	animation-delay: 1s;
+}
+
+.PBox div:nth-child(3){
+   animation-delay: 1.5s;
+}
+
+.PBox div:nth-child(4) {
+	animation-delay: 2s;
+}
+
+.PBox div:nth-child(5) {
+	animation-delay: 2.5s;
+}
+
+
+@keyframes moveup{
+	100%{
+		opacity: 1;
+		transform: translateY(0px);
+	}
+}

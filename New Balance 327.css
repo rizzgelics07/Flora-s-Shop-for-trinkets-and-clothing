@@ -1,0 +1,294 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	background-color: #F4CECE;
+}
+
+body {
+	width: 50%;
+	height: 100%;
+	margin: 5% 25%;
+	background-color: beige;
+	box-shadow:0 2px 4px rgba(0, 0, 0, 1.0);
+	opacity: 0;
+	transform: translateY(30px);
+	animation: moveup 0.5s linear forwards;
+}
+
+.Exit {
+	top: 0;
+	margin-left: 1000px;
+	padding: 15px;
+}
+
+.Top {
+	display: inline;
+	flex: row nowrap;
+	background-color: beige;
+
+}
+
+.Top img {
+   margin-left: 10px;
+   border: solid 5px darkred;
+   background-color: beige; 
+   box-shadow:0 2px 4px rgba(0, 0, 0, 1.0);
+   opacity: 0;
+   transform: translateY(30px);
+   animation: moveup 0.5s linear forwards;
+   animation-delay: 1s;
+}
+
+.Name {
+	position: relative;
+	text-align: left;
+	vertical-align: text-top;
+	margin-left: 525px;
+	bottom: 500px;
+	background-color: beige;
+	font-family: Georgia, serif;
+	opacity: 0;
+	transform: translateY(30px);
+	animation: moveup 0.5s linear forwards;
+	animation-delay: 1.5s;
+}
+
+.Add {
+	width: 250px;
+	position: relative;
+	text-align:left;
+	vertical-align: text-top;
+	margin: 0 10px 0 525px;
+	bottom: 500px;
+	background-color: beige;
+	opacity: 0;
+	transform: translateY(30px);
+	animation: moveup 0.5s linear forwards;
+	animation-delay: 2s;
+}
+
+.Add ins {
+	text-decoration: underline #b2023f solid auto;
+   font-size: 20px;
+   color: #b2023f;
+   background-color: beige;
+}
+
+.Price {
+	position: relative;
+	text-align: left;
+	vertical-align: text-top;
+	margin: 10px 10px 10px 525px;
+	bottom: 500px;
+	background-color: lightgray;
+	font-size: 45px;
+	padding: 10px;
+	opacity: 50;
+	box-shadow:0 2px 4px rgba(0, 0, 0, 1.0);
+	opacity: 0;
+	transform: translateY(30px);
+	animation: moveup 0.5s linear forwards;
+	animation-delay: 2.5s;
+}
+
+.Price b {
+	background-color: inherit;
+}
+
+.PTitle {
+	position: relative;
+	text-align: left;
+	vertical-align: text-top;
+	margin: 0 10px 0 525px;
+	bottom: 500px;
+	width: 415px;
+	font-size: 20px;
+	background-color: #dd6c97;
+	padding: 10px;
+	box-shadow:0 2px 4px rgba(0, 0, 0, 1.0);
+	opacity: 0;
+	transform: translateY(30px);
+	animation: moveup 0.5s linear forwards;
+	animation-delay: 3s;
+}
+
+.PTitle b {
+	background-color: #dd6c97;
+	color: whitesmoke;
+}
+
+button {
+	display: block;
+	text-align: center;
+	vertical-align: inherit;
+	width: 250px;
+	height: 50px;
+	position: relative;
+	margin: 10px 10px 0 525px;
+	bottom: 500px;
+	border-radius: 5px;
+	font-size: 25px;
+	font-family: Andalé Mono, monospace;
+	opacity: 0;
+	transform: translateY(30px);
+	animation: moveup 0.5s linear forwards;
+	animation-delay: 3.5s;
+}
+
+button:hover {
+	width: 300px;
+	margin-left: 550px;
+	border-radius: 15px;
+	opacity: 1;
+	box-shadow:0 2px 4px rgba(0, 0, 0, 1.0);
+	transition: 1s;
+	animation-delay: 1s;
+}
+
+.buynow {
+	background-color: #df7485;
+}
+
+.Description {
+	position: relative;
+	display: flex;
+	flex-flow: column nowrap;
+	text-align: left;
+	margin:10px;
+	width: 900px;
+	bottom: 425px;
+	background-color: beige;
+}
+
+.Description h1 {
+	font-size: 30px;
+	background-color: #e5d8b2;
+	margin-top: 20px;
+}
+
+.Description p {
+	font-size: 20px;
+	background-color: beige;
+	margin: 10px 0;
+}
+
+.Description h6 {
+	margin-top: 10px;
+	font-size: 20px;
+	background-color: beige;
+}
+
+.Description ul li {
+	list-style-type: none;
+	font-size: 20px;
+	background-color: beige;
+}
+
+.Description ul li b {
+	background-color: beige;
+}
+
+.Description p b {
+	background-color: beige;
+}
+
+.Ratings {
+	position: relative;
+	display: flex;
+	flex-flow: column nowrap;
+	text-align: left;
+	width: 900px;
+	margin: 10px;
+	bottom: 425px;
+	background-color: beige;
+}
+
+
+.Ratings h1 {
+	margin-top: 10px;
+	font-size: 30px;
+	background-color: #e5d8b2;
+}
+
+.Ratings .Rate {
+	background-color: lightgray;
+	font-size: 30px;
+	margin: 10px;
+	padding: 10px;
+	box-shadow:0 2px 4px rgba(0, 0, 0, 1.0);
+}
+
+.Ratings .Rate b {
+	background-color: inherit;
+	font-size: 40px;
+}
+
+.Ratings img, .Ratings div {
+	display: flex;
+	flex-flow: row wrap;
+}
+
+.Ratings img {
+	width: 100px;
+	height: 100px;
+	border-radius: 50%;
+	border: 5px solid darkred;
+	box-shadow:0 2px 4px rgba(0, 0, 0, 1.0);
+}
+
+.Ratings div {
+	display: block;
+	position: relative;
+	width: 785px;
+	height: 250px;
+	margin-left: 115px;
+	padding: 10px;
+	bottom: 100px;
+	text-align: justify;
+	font-size: 20px;
+	box-shadow:0 2px 4px rgba(0, 0, 0, 1.0);
+	border-radius: 5px;
+}
+
+.Ratings div:hover{
+	border-radius: 15px;
+	box-shadow:0 2px 4px rgba(0, 0, 0, 1.0);
+   transition: 0.3s;
+}
+
+.Ratings div p {
+	background-color: #F4CECE;
+}
+
+.Ratings div p b {
+	background-color: #F4CECE;
+}
+
+.Ratings div ul {
+	list-style-type: none;
+	margin: 10px 0;
+}
+
+.Ratings div ul li {
+	background-color: #F4CECE;
+}
+
+.Ratings div ul li mark {
+	background-color: #e5d8b2;
+	margin: 10px 0;
+}
+
+.Description, .Ratings {
+	opacity: 0;
+	transform: translateY(30px);
+	animation: moveup 0.5s linear forwards;
+	animation-delay: 4s;
+}
+
+@keyframes moveup{
+	100%{
+		opacity: 1;
+		transform: translateY(0px);
+	}
+}
